@@ -1,0 +1,19 @@
+server.port: 8081
+
+database: 
+  config:
+          driverClassName: com.mysql.cj.jdbc.Driver
+          password: admin1234
+          url: "jdbc:mysql://dbshackathon.c25iqeh1rzu3.ap-south-1.rds.amazonaws.com:3306/remoridesdb"
+          username: admin
+          
+spring:
+  application:
+     name: loanProcessApp
+     
+      
+hibernate.dialect: org.hibernate.dialect.MySQLDialect
+hibernate.generate_statistics: false
+hibernate.hbm2ddl.auto: update
+hibernate.show_sql: true  
+
