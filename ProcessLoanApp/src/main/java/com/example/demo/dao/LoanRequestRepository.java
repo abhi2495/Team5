@@ -1,5 +1,11 @@
 package com.example.demo.dao;
 
-public class LoanRequestRepository {
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+import com.example.demo.models.LoanRequest;
+
+@Repository
+public interface LoanRequestRepository extends CrudRepository<LoanRequest, Long>{
 
 }
